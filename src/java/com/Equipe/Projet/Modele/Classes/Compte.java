@@ -12,6 +12,7 @@ import java.util.logging.Logger;
  * @author Le Paré
  */
 public class Compte {
+    //Attribut
     public int IdCompte;
     public String Courriel;
     public String MotDePasse;
@@ -19,7 +20,7 @@ public class Compte {
     public String Prenom;
     public int Age;
     public String Ville;
-
+    //Constructeur
     public Compte(int IdCompte,String Courriel, String MotDePasse, String Nom, String Prenom, int Age, String Ville) {
         this.IdCompte = IdCompte;
         this.Courriel = Courriel;
@@ -29,7 +30,7 @@ public class Compte {
         this.Age = Age;
         this.Ville = Ville;
     }
-
+    //Getter et Setter
     public void setCourriel(String Courriel) {
         this.Courriel = Courriel;
     }

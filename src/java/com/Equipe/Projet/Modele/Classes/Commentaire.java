@@ -10,17 +10,52 @@ package com.Equipe.Projet.Modele.Classes;
  * @author Le Paré
  */
 public class Commentaire {
-    public int idCommentaire;
+    //Attribut
+    public int IdCommentaire;
     public String Texte;
-    public int IdCompte;
-    public int IdLieu;
-
-    public Commentaire(int idCommentaire, String Texte, int IdCompte, int IdLieu) {
-        this.idCommentaire = idCommentaire;
+    public int IdCompteCreateur;
+    public int IdLieuCommenter;
+    // Constructeur
+    public Commentaire(int IdCommentaire, String Texte, int IdCompteCreateur, int IdLieuCommenter) {
+        this.IdCommentaire = IdCommentaire;
         this.Texte = Texte;
-        this.IdCompte = IdCompte;
-        this.IdLieu = IdLieu;
+        this.IdCompteCreateur = IdCompteCreateur;
+        this.IdLieuCommenter = IdLieuCommenter;
     }
+    //Getter et Setter
+
+    public int getIdCommentaire() {
+        return IdCommentaire;
+    }
+
+    public void setIdCommentaire(int IdCommentaire) {
+        this.IdCommentaire = IdCommentaire;
+    }
+
+    public String getTexte() {
+        return Texte;
+    }
+
+    public void setTexte(String Texte) {
+        this.Texte = Texte;
+    }
+
+    public int getIdCompteCreateur() {
+        return IdCompteCreateur;
+    }
+
+    public void setIdCompteCreateur(int IdCompteCreateur) {
+        this.IdCompteCreateur = IdCompteCreateur;
+    }
+
+    public int getIdLieuCommenter() {
+        return IdLieuCommenter;
+    }
+
+    public void setIdLieuCommenter(int IdLieuCommenter) {
+        this.IdLieuCommenter = IdLieuCommenter;
+    }
+    
     
     
     
